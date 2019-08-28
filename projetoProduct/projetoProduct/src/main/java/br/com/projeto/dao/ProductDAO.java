@@ -20,7 +20,7 @@ public class ProductDAO {
 		return repository.findAll();
 	}
 	
-	public Product get(int id) {
+	public Product get(Long id) {
 		return repository.findById(id).get();
 	}
 	
@@ -28,7 +28,7 @@ public class ProductDAO {
 		repository.save(product);
 	}
 	
-	public void delete(int id) {
+	public void delete(Long id) {
 		repository.deleteById(id);
 	}
 }
